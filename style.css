@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #111;
+    height: 75px; 
+    display: flex;    
+    justify-content: space-between;
+    padding: 0 100px;
+    color: white;
+}
+header h1{
+    font-size: 50px;
+    font-style: italic;
+    line-height: 70px;
+}
+
+div ul li{
+    display: inline-block;
+    padding: 50px 50px;
+    font-size: 20px;
+}
+.banner{
+    padding: 0px 0px 500px 100px;
+    background: url(lala.webp);
+    background-size: cover;
+    text-align: center;
+    padding: 200px 100px;
+}
+div h1{
+    font-size: 100px;
+    opacity: 0.8;
+}
+.container p{
+    font-size: 20px;
+    padding: 0;
+    font-style: oblique;
+}
+.judul h2{
+    color:white;
+    padding: 50px;
+    font-size: 40px;
+    background-color: rgb(0, 174, 255);
+}
+.gallery{
+    padding: 0px 100px 0px ;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px; 
+    color: navy;
+}
+.gallery img{
+    object-fit: cover;
+    border: 1px solid white;
+    box-shadow: 1px 2px 3px white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+footer{
+    padding: 50px;
+    background-color: gray;
+    height: 220px;
+    color: white;
+    font-size: 20px;
+}
+
+.section{
+    height: 100vh;
+}
+
+.isipage{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.isipage .isipage_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.isipage .isipage_main .isifoto {
+    position: absolute;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    border-radius: 5px;
+}
+
+.isipage .isipage_main .pagetext h1{
+    font-size: 55px;
+    margin-top: 120px;
+    position: relative;
+    bottom: 50px;
+}
+
+.isipage .isipage_main .pagetext p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
+
+.right {
+    display: flex;
+    flex: 1;
+    height: 460px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    height: 522px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.left-container {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px
+}
+
+.left p {
+    font-size: 0.9rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.right-container {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+input,
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #00b4cf;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #00b4cf;
+    background-color: #00b4cf;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+textarea {
+    height: 90px;
+}
+/* responsive */
+
+@media only screen and (max-width: 600px){
+    .left {
+        display: none;
+    }
+
+    .lg-view {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sm-view {
+        display: none;
+    }
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
